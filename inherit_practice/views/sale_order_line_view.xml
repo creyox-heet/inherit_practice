@@ -10,8 +10,8 @@
                 <field name="is_split"/>
             </xpath>
             <xpath expr="//header/field[@name='state']" position="after">
-                <button name="%(action_split)d"
-                            type="action"
+                <button name="action_split"
+                            type="object"
                             string="Split"
                             class="btn-primary"/>
             </xpath>

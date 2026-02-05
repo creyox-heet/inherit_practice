@@ -12,7 +12,8 @@
                 </group>
             </sheet>
              <footer>
-                    <button
+                    <button name="action_for_split"
+                            type="object"
                             string="Process"
                             class="btn-warning"/>
                     <button string="Cancel"
