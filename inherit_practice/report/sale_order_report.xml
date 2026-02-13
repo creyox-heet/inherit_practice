@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_sale_order_inherit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//th[@name='th_description']" position="after">
+            <t t-if="any(line.extra_description for line in doc.order_line)" >
+                <th name="th_extra_description" class="text-start">Extra Description</th>
+            </t>
+        </xpath>
+        <xpath expr="//td[@name='td_name']" position="after">
+            <t t-if="any(line.extra_description for line in doc.order_line)">
+                <td name="td_extra_description">
+                    <span t-field="line.extra_description"/>
+                </td>
+            </t>
+        </xpath>
+    </template>
+</odoo>

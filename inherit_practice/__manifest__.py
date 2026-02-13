@@ -13,6 +13,7 @@
         "depends": ["base","sale","sale_management",],
     "data": [
         "security/ir.model.access.csv",
+        "report/sale_order_report.xml",
         "views/split_sale_wizard_view.xml",
         "views/sale_order_line_view.xml"
     ],

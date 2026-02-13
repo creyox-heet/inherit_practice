@@ -6,4 +6,4 @@ class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     is_split = fields.Boolean(string="Split")
-
+    extra_description = fields.Text(string="Extra Description")

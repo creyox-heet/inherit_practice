@@ -15,6 +15,9 @@
                             string="Split"
                             class="btn-primary"/>
             </xpath>
+            <xpath expr="//sheet/notebook/page[@name='order_lines']/field[@name='order_line']/tree/field[@name='name']" position="after">
+                <field name="extra_description"/>
+            </xpath>
         </field>
     </record>
 
