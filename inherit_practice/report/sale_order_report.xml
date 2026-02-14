@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="report_sale_order_inherit" inherit_id="sale.report_saleorder_document">
-        <xpath expr="//th[@name='th_description']" position="after">
+        <xpath expr="//th[@name='th_quantity']" position="after">
             <t t-if="any(line.extra_description for line in doc.order_line)" >
-                <th name="th_extra_description" class="text-start">Extra Description</th>
+                <th name="th_extra_description" class="text-end">Extra Description</th>
             </t>
         </xpath>
-        <xpath expr="//td[@name='td_name']" position="after">
+        <xpath expr="//td[@name='td_quantity']" position="after">
             <t t-if="any(line.extra_description for line in doc.order_line)">
-                <td name="td_extra_description">
+                <td name="td_extra_description" class="text-end">
                     <span t-field="line.extra_description"/>
                 </td>
             </t>
