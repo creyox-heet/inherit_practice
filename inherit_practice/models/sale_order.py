@@ -13,4 +13,3 @@ class SaleOrder(models.Model):
             'target': 'new',
             'context': {'form_partner_id': self.partner_id.id},
         }
-
