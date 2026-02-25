@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_split_sale_wiz,access.split.sale.wiz,model_split_sale_wiz,,1,1,1,1
 access_sale_report_wiz,access.sale.report.wiz,model_sale_report_wiz,,1,1,1,1
+access_inventory_stock_report_wiz,access.inventory.stock.report.wiz,model_inventory_stock_report_wiz,,1,1,1,1
+access_data_storage_wiz,access.data.storage.wiz,model_data_storage_wiz,,1,1,1,1

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<record id="view_data_storage_wiz2" model="ir.ui.view">
+    <field name="name">view.data.storage.wiz2</field>
+    <field name="model">data.storage.wiz</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="date"/>
+            <field name="product_id"/>
+            <field name="on_hand_stock"/>
+        </tree>
+    </field>
+</record>
+</odoo>
